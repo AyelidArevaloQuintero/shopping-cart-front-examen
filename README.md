@@ -15,6 +15,15 @@ El cliente solicita una solución rápida usando frameworks CSS/JS modernos y co
 
 ✅ Objetos JSON
 
+Instrucciones para ver el proyecto:
+(Puede ver tambien el word subido a la uvirtual)
+Nuestro proyecto consta de un html principal el cual se llama Index.html, este tiene todo nuestra pagina principal
+al entrar te vas a encontrar con el login(ver imagen 1), para poder ingresar debes poner en la parte de email
+@.com.
+Al hacer el login puedes ver todas las opciones que nuestra pagina tiene para ti, entre las cuales están: 
+1.	La sección de productos: la cual te muestra los productos que tenemos disponibles. (ver imagen 2).
+2.	La sección de usuario: Acá podrás ver los usuarios que actualmente tenemos en la página. (ver imagen 3)
+3.	La sección de carritos: Donde podrás ver que productos tienes en la lista para comprar próximamente. (ver imagen 4)
 
 
 🌐 Desarrolladores:
