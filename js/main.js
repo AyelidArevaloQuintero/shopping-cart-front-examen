@@ -44,11 +44,11 @@ function cargarDatos(tipo) {
     titulo = "Listado de Productos";
   } else if (tipo === "usuarios") {
     url = "https://fakestoreapi.com/users";
-    campos = { titulo: "username", imagen: "", descripcion: "email", extra: "id" };
+    campos = { titulo: "username", imagen: "image", descripcion: "email", extra: "id" };
     titulo = "Listado de Usuarios";
   } else if (tipo === "carritos") {
     url = "https://fakestoreapi.com/carts";
-    campos = { titulo: "id", imagen: "", descripcion: "date", extra: "userId" };
+    campos = { titulo: "id", imagen: "image", descripcion: "date", extra: "userId" };
     titulo = "Listado de Carritos";
   }
 
@@ -84,6 +84,15 @@ function cargarDatos(tipo) {
       contenedor.innerHTML = `<p class="text-danger">Error al cargar los datos</p>`;
       console.error(err);
     });
+
+    const product = { title: 'New Product', price: 29.99 };
+  fetch('https://fakestoreapi.com/products', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(product)
+})
+  .then(response => response.json())
+  .then(data => console.log(data));
 }
 
 function verDetalle(item) {
